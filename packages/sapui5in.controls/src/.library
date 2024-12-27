@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd">
+	<name>sapui5in.controls</name>
+	<vendor>Dhrubajyoti Rakshit</vendor>
+	<version>${version}</version>
+	<copyright>${copyright}</copyright>
+	<title>sapui5in.controls</title>
+	<documentation>Some description about sapui5in.controls</documentation>
+	<dependencies>
+		<dependency>
+			<libraryName>sap.ui.core</libraryName>
+		</dependency>
+	</dependencies>
+</library>
