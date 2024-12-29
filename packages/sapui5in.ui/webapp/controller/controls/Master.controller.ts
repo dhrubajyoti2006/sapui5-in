@@ -3,7 +3,7 @@ import BaseController from "./../BaseController";
 import formatter from "sapui5in/ui/model/formatter";
 import UIComponent from "sap/ui/core/UIComponent";
 import StandardListItem from "sap/m/StandardListItem";
-import {ListBase$ItemPressEvent, ListBase$SelectionChangeEvent} from "sap/m/ListBase";
+import {ListBase$SelectionChangeEvent} from "sap/m/ListBase";
 import {Route$PatternMatchedEvent} from "sap/ui/core/routing/Route";
 
 /**

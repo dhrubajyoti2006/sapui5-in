@@ -1,9 +1,26 @@
 export default {
 	getControls: () => {
 		return [
-			{"id": "1", "name": "Control 1", "description": "Description 1", "icon": "sap-icon://add"},
-			{"id": "2", "name": "Control 2", "description": "Description 2", "icon": "sap-icon://delete"},
-			{"id": "3", "name": "Control 3", "description": "Description 3", "icon": "sap-icon://edit"}
+			{
+				id: "sapui5in.controls.Example",
+				library: "sapui5in.controls",
+				name: "Example",
+				description: "Example",
+				icon: "sap-icon://add",
+				createdBy: {
+					name: "Dhrubajyoti Rakshit"
+				}
+			},
+			{
+				id: "sapui5in.controls.Rectangle",
+				library: "sapui5in.controls",
+				name: "Rectangle",
+				description: "Rectangle",
+				icon: "sap-icon://add",
+				createdBy: {
+					name: "Dhrubajyoti Rakshit"
+				}
+			},
 		];
 	}
 };

@@ -22,7 +22,10 @@ const thisLib: { [key: string]: unknown } = Lib.init({
 	],
 	types: ["sapui5in.controls.ExampleColor"],
 	interfaces: [],
-	controls: ["sapui5in.controls.Example"],
+	controls: [
+		"sapui5in.controls.Example",
+		"sapui5in.controls.Rectangle",
+	],
 	elements: [],
 	noLibraryCSS: false // if no CSS is provided, you can disable the library.css load here
 }) as { [key: string]: unknown };
@@ -46,6 +49,7 @@ export enum ExampleColor {
 	 */
 	Highlight = "Highlight"
 }
+
 // FIXME: this line is planned to become obsolete and may need to be removed later
 thisLib.ExampleColor = ExampleColor; // add the enum to the library; this is important because UI5 otherwise cannot identify the type and will skip type checking for properties of this type
 
