@@ -1,0 +1,32 @@
+<mvc:View
+	controllerName="sapui5in.ui.controller.controls.Master"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	class="sapUiSizeCompact"
+>
+
+	<Page
+		title="Control List"
+		id="idControlsMaster">
+		<content>
+			<List
+				id="masterList"
+				mode="SingleSelectMaster"
+				selectionChange=".onItemSelectionChange"
+				items="{
+				path: 'data>/controls'
+			}">
+				<items>
+					<StandardListItem
+						selected="{=!!(${data>/selectedKey} === ${data>id})}"
+						title="{data>name}"
+						description="{data>description}"
+						icon="{data>icon}"
+						type="Active"/>
+				</items>
+			</List>
+		</content>
+	</Page>
+
+</mvc:View>
