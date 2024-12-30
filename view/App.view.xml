@@ -9,8 +9,8 @@
 
 	<tnt:ToolPage>
 		<tnt:header>
-			<f:ShellBar title="Master Detail with Routing"
-									secondTitle="Boilerplate application"
+			<f:ShellBar title="Custom Control Library"
+									secondTitle=""
 									showMenuButton="true"
 									showCopilot="true"
 									showNotifications="true"
