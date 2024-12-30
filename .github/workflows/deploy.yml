@@ -30,7 +30,7 @@ jobs:
 
       # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: dhrubajyoti2006/sapui5-in
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: packages/sapui5in.ui/dist
