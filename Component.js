@@ -1,0 +1,2 @@
+"use strict";sap.ui.define(["sap/ui/core/UIComponent","./model/models"],function(t,e){"use strict";function n(t){return t&&t.__esModule&&typeof t.default!=="undefined"?t.default:t}const i=n(e);const s=t.extend("sapui5in.ui.Component",{metadata:{manifest:"json"},init:function e(){t.prototype.init.call(this);this.setModel(i.createDeviceModel(),"device");this.getRouter().initialize()},getContentDensityClass:function t(){this.contentDensityClass="sapUiSizeCompact";return this.contentDensityClass}});return s});
+//# sourceMappingURL=Component.js.map

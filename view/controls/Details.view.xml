@@ -1,0 +1,42 @@
+<mvc:View
+	controllerName="sapui5in.ui.controller.controls.Details"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:f="sap.f"
+	xmlns:layout="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc">
+
+	<f:FlexibleColumnLayout id="fcl" layout="TwoColumnsBeginExpanded">
+		<f:beginColumnPages>
+			<f:DynamicPage id="dynamicPageId" headerExpanded="{/headerExpanded}" toggleHeaderOnTitleClick="{/titleClickable}">
+				<!-- DynamicPage Title -->
+				<f:title>
+					<f:DynamicPageTitle>
+						<f:heading>
+							<Title text="{data>/selectedItem/name}"/>
+						</f:heading>
+					</f:DynamicPageTitle>
+				</f:title>
+				<f:header>
+					<f:DynamicPageHeader>
+						<layout:HorizontalLayout allowWrapping="true">
+							<layout:VerticalLayout class="sapUiMediumMarginEnd">
+								<ObjectAttribute title="Name" text="{data>/selectedItem/name}"/>
+								<ObjectAttribute title="Library" text="{data>/selectedItem/library}"/>
+								<ObjectAttribute title="Created By" text="{data>/selectedItem/createdBy/name}"/>
+							</layout:VerticalLayout>
+						</layout:HorizontalLayout>
+					</f:DynamicPageHeader>
+				</f:header>
+				<f:content>
+					<VBox id="idContent"/>
+				</f:content>
+			</f:DynamicPage>
+		</f:beginColumnPages>
+		<f:midColumnPages>
+			<Page id="endPage" title="Right Sidebar">
+			</Page>
+		</f:midColumnPages>
+	</f:FlexibleColumnLayout>
+
+</mvc:View>

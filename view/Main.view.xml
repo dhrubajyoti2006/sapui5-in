@@ -1,0 +1,24 @@
+<mvc:View
+	controllerName="sapui5in.ui.controller.Main"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	core:require="{
+		formatter: 'sapui5in/ui/model/formatter'
+	}">
+
+	<Page
+		title="{i18n>appTitle}"
+		id="page">
+		<content>
+			<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Control Library"
+									 subheader="Controls" press="toControls">
+				<TileContent>
+					<Text text="To Control"/>
+				</TileContent>
+			</GenericTile>
+		</content>
+	</Page>
+
+</mvc:View>

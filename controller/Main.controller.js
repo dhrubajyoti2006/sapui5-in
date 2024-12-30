@@ -1,0 +1,2 @@
+"use strict";sap.ui.define(["sap/ui/core/UIComponent","./BaseController"],function(t,n){"use strict";function o(t){return t&&t.__esModule&&typeof t.default!=="undefined"?t.default:t}const e=o(n);const u=e.extend("sapui5in.ui.controller.Main",{toControls:function n(){const o=t.getRouterFor(this);o.navTo("controls")}});return u});
+//# sourceMappingURL=Main.controller.js.map

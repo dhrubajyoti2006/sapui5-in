@@ -1,0 +1,2 @@
+"use strict";sap.ui.define([],function(){"use strict";var e={apiVersion:2,render:function(e,t){e.openStart("div",t);e.style("width",t.getWidth());e.style("height",t.getHeight());e.style("background-color",t.getColor());e.openEnd();e.close("div")}};return e});
+//# sourceMappingURL=RectangleRenderer.js.map

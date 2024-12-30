@@ -1,0 +1,2 @@
+"use strict";sap.ui.define(["sap/ui/core/UIComponent","./../BaseController"],function(t,o){"use strict";function n(t){return t&&t.__esModule&&typeof t.default!=="undefined"?t.default:t}const e=n(o);const s=e.extend("sapui5in.ui.controller.Controls",{onInit:function o(){const n=t.getRouterFor(this);n.getRoute("controls").attachPatternMatched(this._onControlsMatched.bind(this))},_onControlsMatched:function t(){console.log("onControlsMatched")}});return s});
+//# sourceMappingURL=Controls.controller.js.map
